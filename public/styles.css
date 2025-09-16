@@ -18,7 +18,6 @@ body {
     background-color: black;
 }
 
-/* Section containers */
 .section {
     position: absolute;
     z-index: 2;
@@ -38,7 +37,6 @@ body {
     height: 30%;
 }
 
-/* Input box for top-left section */
 .input-box {
     position: fixed;
     top: 3%;
@@ -56,7 +54,6 @@ body {
     z-index: 10;
 }
 
-/* Reverse input box for bottom-right section */
 .reverse-input-box {
     position: fixed;
     bottom: 3%;
@@ -78,7 +75,6 @@ body {
     color: #999;
 }
 
-/* SVG for connection lines covering the entire container */
 .connection-lines {
     position: absolute;
     top: 0;
@@ -89,7 +85,6 @@ body {
     z-index: 1;
 }
 
-/* Box container for top-left section */
 .box-container {
     position: fixed;
     top: 15%;
@@ -102,21 +97,19 @@ body {
     z-index: 10;
 }
 
-/* Copy icon container for top-left section */
 .copy-icon-container {
     position: fixed;
     top: 22%;
     left: 3%;
     width: 94%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
     z-index: 10;
 }
 
-/* Reverse box container for bottom-right section */
 .reverse-box-container {
     position: fixed;
     bottom: 15%;
@@ -147,7 +140,6 @@ body {
     padding: 2px;
 }
 
-/* Editable box styling */
 .editable-box {
     cursor: text;
     transition: all 0.3s ease;
@@ -165,21 +157,18 @@ body {
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
 }
 
-/* Reverse icon container for bottom-right section */
 .reverse-icon-container {
     position: fixed;
     bottom: 22%;
     right: 3%;
     width: 94%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
     z-index: 10;
 }
-
-/* Icon button styling (now part of box-container) */
 
 .icon-button {
     width: 40px;
@@ -210,10 +199,16 @@ body {
     stroke: currentColor;
 }
 
+.phrase-label {
+    color: white;
+    font-family: "Anonymous Pro", "Courier New", monospace;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    opacity: 0.8;
+}
 
-/* Remove the old pseudo-element lines since we're using SVG now */
-
-/* Responsive adjustments */
 @media (max-width: 1200px) {
     .top-left, .bottom-right {
         width: 50%;
